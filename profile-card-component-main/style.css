@@ -1,0 +1,13 @@
+:root{
+    --background: hsl(185, 75%, 39%);
+    --main:hsl(229, 23%, 23%);
+    --secondary: hsl(227, 10%, 46%);
+
+    --line: hsl(0, 0%, 59%);
+
+    font-family: 'Kumbh Sans',
+    sans-serif;
+    font-size: 18px;
+}
+
+
