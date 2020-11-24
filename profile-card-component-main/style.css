@@ -9,5 +9,15 @@
     sans-serif;
     font-size: 18px;
 }
+body{
+    margin:0px;
+}
 
 
+.background{
+    background: right 50vw bottom 40vh no-repeat url(images/bg-pattern-top.svg),
+                51vw 50vh no-repeat url(images/bg-pattern-bottom.svg) var(--background);
+     display:grid;
+     grid-template-rows: 100vh;
+     grid-template-columns: 50% 50%;
+}
