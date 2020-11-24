@@ -13,11 +13,73 @@ body{
     margin:0px;
 }
 
-
 .background{
-    background: right 50vw bottom 40vh no-repeat url(images/bg-pattern-top.svg),
+    position:relative;
+    background: right 52.3vw bottom 40vh no-repeat url(images/bg-pattern-top.svg),
                 51vw 50vh no-repeat url(images/bg-pattern-bottom.svg) var(--background);
      display:grid;
      grid-template-rows: 100vh;
      grid-template-columns: 50% 50%;
+}
+
+.card {
+    position: absolute;
+    background-color: white;
+    width: 430px;
+    height: 430px;
+    top:24%;
+    left:38.8%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius:15px;
+}
+.card__bg{
+    background: url("images/bg-pattern-card.svg");
+    height: 37.7%;
+    width:100%;
+    border-radius: 15px 15px 0 0;
+}
+.card__header{
+    height:38.8%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+}
+
+.card__social {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-around;
+}
+
+.card__social--column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.5;
+    width:20%;
+}
+
+.card__img{
+    position:relative;
+    bottom: 30%;
+    border: solid white 5px;
+    border-radius: 50px;
+    margin-bottom: -30%;
+}
+hr{
+    color: var(--line);
+    width:100%;
+}
+p{
+    font-weight: 700;
+    color: var(--main);
+}
+
+span{
+    color: var(--secondary);
+    font-size: 14px;
 }
