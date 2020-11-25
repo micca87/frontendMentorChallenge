@@ -14,24 +14,23 @@ body{
 }
 
 .background{
-    position:relative;
+    display:grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: 50% 50%;
     background: right 52.3vw bottom 40vh no-repeat url(images/bg-pattern-top.svg),
-                51vw 50vh no-repeat url(images/bg-pattern-bottom.svg) var(--background);
-     display:grid;
-     grid-template-rows: 100vh;
-     grid-template-columns: 50% 50%;
+    51vw 50vh no-repeat url(images/bg-pattern-bottom.svg) var(--background);
 }
 
 .card {
     position: absolute;
-    background-color: white;
-    width: 430px;
-    height: 430px;
-    top:24%;
-    left:38.8%;
     display:flex;
     flex-direction: column;
+    place-self: center;
     align-items: center;
+    background-color: white;
+    height: 430px;
+    max-width: 430px;
+    min-width:375px;
     border-radius:15px;
 }
 .card__bg{
@@ -41,42 +40,44 @@ body{
     border-radius: 15px 15px 0 0;
 }
 .card__header{
-    height:38.8%;
+    position:relative;
     display:flex;
     flex-direction: column;
     align-items: center;
-    position:relative;
+    height:38.8%;
 }
 
 .card__social {
     display: flex;
     flex-direction: row;
-    width:100%;
     justify-content: space-around;
+    width:100%;
 }
 
 .card__social--column{
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 0.5;
     width:20%;
+    line-height: 0.5;
 }
 
 .card__img{
     position:relative;
     bottom: 30%;
-    border: solid white 5px;
     border-radius: 50px;
     margin-bottom: -30%;
+    border: solid white 5px;
 }
+
 hr{
     color: var(--line);
     width:100%;
 }
+
 p{
-    font-weight: 700;
     color: var(--main);
+    font-weight: 700;
 }
 
 span{
