@@ -1,0 +1,117 @@
+
+
+body{
+    background: #E6EFF6;
+    margin:0;
+    position:relative;
+    height:100vh;
+    font-family: 'Karla',
+    sans-serif;
+}
+p{
+    margin: 4px 41px;
+}
+
+.container {
+    background-color: white;
+    color:white;
+    max-width: 635px;
+    min-width: 294px;
+    height: 474px;
+    position:absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right:0;
+    margin: auto;
+    display:grid;
+    grid-template-rows: 215px 259px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "article article"
+                         "aside_left aside_right" ;
+    border-radius:6px;
+    overflow:hidden;
+    box-shadow: 5px 20px 40px -20px hsl(218, 22%, 67%), -5px 20px 40px -20px hsl(218, 22%, 67%);
+}
+.article{
+    grid-area:article;
+}
+.heading{
+    color:hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size:24px;
+    margin-top:40px;
+    margin-bottom:25px;
+}
+.subheading{
+    color:hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size:18px;
+    margin-bottom:10px;
+}
+.article__paragraph{
+    color:hsl(218, 22%, 67%);
+}
+
+
+.left{
+    grid-area:aside_left;
+    background-color: hsl(179, 62%, 43%);
+}
+.right{
+    grid-area:aside_right;
+    background-color: #4ABEBD;
+    font-size: 13.5px;
+    color:#AFFFFF;
+}
+.aside__heading{
+    margin-top:40px;
+    margin-bottom:22px;
+    font-weight: 700;
+    font-size:18px;
+    color:white;
+}
+.aside__price{
+    font-weight: 700;
+    font-size: 30px;
+}
+.button{
+    color:white;
+    background-color: hsl(71, 73%, 54%);
+    border:none;
+    padding: 14px 90px 11px;
+    border-radius: 5px;
+    margin: 24px 40px 34px;
+    font-weight:700;
+    font-size:14px;
+    box-shadow: -5px 10px 20px #26A39F;
+}
+@media (max-width:670px) {
+    body{
+        height:800px;
+    }
+    .container{
+        width:294px;
+        height:683px;
+        grid-template-rows: 252px 216px 215px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "article"
+                             "aside_left"
+                             "aside_right";
+    }
+    .heading, .aside__heading{
+        margin-top:20px;
+        font-size:18px;
+    }
+    .button{
+        padding: 13px 97px 11px;
+        margin: 24px 20px 34px;
+    }
+    .article__paragraph{
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+    p{
+        margin: 4px 20px;
+    }
+}
