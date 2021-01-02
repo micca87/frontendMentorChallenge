@@ -92,10 +92,26 @@ p{
     }
     .container{
         width:294px;
-        height:687px;
+        height:683px;
+        grid-template-rows: 252px 216px 215px;
         grid-template-columns: 1fr;
         grid-template-areas: "article"
                              "aside_left"
                              "aside_right";
+    }
+    .heading, .aside__heading{
+        margin-top:20px;
+        font-size:18px;
+    }
+    .button{
+        padding: 13px 97px 11px;
+        margin: 24px 20px 34px;
+    }
+    .article__paragraph{
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+    p{
+        margin: 4px 20px;
     }
 }
