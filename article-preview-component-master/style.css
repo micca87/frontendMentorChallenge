@@ -1,0 +1,13 @@
+.container{
+    max-width:327px;
+    height:auto;
+    margin: auto;
+}
+.article__img{
+    height: 200px;
+    width: 327px;
+    background-image: url("./images/drawers.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
