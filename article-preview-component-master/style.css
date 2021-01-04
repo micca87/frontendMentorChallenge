@@ -7,12 +7,14 @@
         sans-serif;
     font-size: 13px;
 }
+
 body{
     background-color: var(--light-grayish);
     position: relative;
     height: 100vh;
     margin:0px;
 }
+
 .container{
     position: absolute;
     top:0;
@@ -26,6 +28,7 @@ body{
     border-radius: 10px;
     overflow: hidden;
 }
+
 .article__img{
     height: 200px;
     width: 327px;
@@ -33,4 +36,19 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% 25%;
+}
+
+.article__heading{
+    font-weight: 700;
+    font-size: 16.5px;
+    line-height: 1.5;
+    margin: 37px 32px 14px;
+    color: var(--dark-grayish);
+}
+.article__text{
+    font-weight: 500;
+    font-size: 13.3px;
+    line-height: 1.5;
+    margin: 0px 32px 21px;
+    color: var(--desaturated-gark);
 }
