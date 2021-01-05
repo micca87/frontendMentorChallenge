@@ -1,17 +1,16 @@
-let hover = document.getElementById('hover');
+let footer = document.getElementById('footer--active');
 let share = document.getElementById('share');
 
 
 share.addEventListener('click', (e) => {
-console.log(e.target.nodeName)
 
     switch(e.target.nodeName) {
             case 'SPAN':
             case 'DIV':
-            hover.classList.toggle("hover-toogle");
+            footer.classList.toggle("toogle--active");
             break;
     }
-    },true);
+    });
 
 
 
