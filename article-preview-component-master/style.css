@@ -27,6 +27,8 @@ body{
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 5px 20px 40px -40px var(--grayish),
+    -5px 20px 40px -40px var(--grayish);
 }
 
 .article__img{
@@ -41,14 +43,131 @@ body{
 .article__heading{
     font-weight: 700;
     font-size: 16.5px;
-    line-height: 1.5;
-    margin: 37px 32px 14px;
+    line-height: 1.45;
+    margin: 35px 32px 14px;
     color: var(--dark-grayish);
 }
 .article__text{
     font-weight: 500;
     font-size: 13.3px;
     line-height: 1.5;
-    margin: 0px 32px 21px;
+    margin: 0px 32px 19px;
     color: var(--desaturated-gark);
 }
+
+
+/* FOOTER */
+
+.article__footer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 32px 8px;
+}
+.article__portrait{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("./images/avatar-michelle.jpg");
+    background-size: cover;
+    border-radius: 50px;
+}
+.article__author{
+    display: flex;
+    flex-direction: column;
+    margin-left: -46px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--dark-grayish);
+}
+.article__date{
+    font-weight: 500;
+    color: var(--grayish);
+}
+.article__share{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    background-color: var(--light-grayish);
+    position: relative;
+}
+.article__share--icon{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 13px;
+    width: 15px;
+    background-image: url("./images/icon-share.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ACTIVE FOOTER */
+
+.hover{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    display:none;
+    background-color: var(--dark-grayish);
+}
+.article__share--iconHover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 13px;
+    width: 15px;
+    background-image: url("./images/icon-share-hover.svg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.article__share--hover {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    background-color:var(--desaturated-gark);
+    position: relative;
+}
+.article__social{
+    display:flex;
+}
+.social{
+    width:20px;
+    height:20px;
+}
+.facebook{
+    background-image: url("./images/icon-facebook.svg") ;
+    margin-right:15px;
+}
+.twitter{
+    background-image:url("./images/icon-twitter.svg") ;
+    margin-right:15px;
+    height:17px;
+}
+.pinterest{
+    background-image: url("./images/icon-pinterest.svg");
+    margin-right:30px;
+}
+
+.article__active--text{
+    color:var(--grayish);
+    letter-spacing: 0.4em;
+}
+.hover-toogle{
+display:flex;}

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  
   <title>Frontend Mentor | Article preview component</title>
 
 
@@ -30,19 +31,37 @@
         to help you make any room feel complete.
       </p>
 
-      <footer class="article__footer">
-        <span class="article__portrait">
+      <footer id="share" class="article__footer">
+        <div class="article__portrait">
 
-        </span>
-        <p class="article_author">
+        </div>
+        <p class="article__author">
           Michelle Appleton
-          28 Jun 2020
+          <span class="article__date">28 Jun 2020</span>
         </p>
 
-        <span class="article__share">Share</span>
+        <span class="article__share">
+          <div class="article__share--icon"></div>
+        </span>
+
+        <div id="hover" class="hover article__footer">
+          <div class="article__active--text">
+            SHARE
+          </div>
+          <div class="article__social">
+            <a href="https://facebook.com"><div class="social facebook"></div></a>
+            <a href="https://twitter.com"><div class="social twitter"></div></a>
+            <a href="https://pinterest.com"><div class="social pinterest"></div></a>
+          </div>
+
+          <span class="article__share--hover">
+            <div class="article__share--iconHover"></div>
+          </span>
+        </div>
       </footer>
     </div>
   </div>
 
 </body>
+<script src="script.js"></script>
 </html>
